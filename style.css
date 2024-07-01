@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.comments-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.comment,
+.comment-form-section {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.upvotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    background-color: hsl(228, 33%, 97%);
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 2px;
+}
+
+.upvote,
+.downvote {
+    color: hsl(238, 40%, 52%);
+    background-color: hsl(228, 33%, 97%);
+    border: none;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.vote-count {
+    margin: 5px 0;
+    color: hsl(238, 40%, 52%);
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.comment-time {
+    color: #888;
+}
+
+.comment-text {
+    margin: 0 0 10px 0;
+    font-weight: 500;
+}
+
+.mention {
+    color: #5357b6;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button {
+    background-color: #5357b6;
+    color: white;
+    border: none;
+    padding: 5px 15px; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete {
+    color: hsl(358, 79%, 66%);
+    background-color: transparent;
+    padding: 5px 15px;
+    font-weight: 600;
+}
+
+.edit {
+    color: hsl(238, 40%, 52%);
+    background-color: transparent;
+    padding: 5px 15px;
+    font-weight: 600;
+}
+
+.reply {
+    color: hsl(238, 40%, 52%);
+    background-color: transparent;
+    padding: 5px 30px;
+    font-weight: 600;
+}
+
+.reply-comment {
+    margin-left: 40px;
+}
+
+.comment-form-section {
+    display: flex;
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form-section input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid hsl(223, 19%, 93%);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.edit-area {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid hsl(223, 19%, 93%);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+    font-weight: 500;
+}
